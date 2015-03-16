@@ -22,7 +22,6 @@
         <display:column property="status" sortable="true" titleKey="camera.status"/>
         <display:column property="ip" sortable="true" titleKey="camera.ip"/>
         <display:column property="maxUsers" sortable="true" titleKey="camera.maxUsers"/>
-        <display:column property="currentUsers" sortable="true" titleKey="camera.currentUsers"/>
         <display:column href="./deleteCamera" paramId="apkId" paramProperty="apkId" titleKey="button.delete">
         	<img src="../images/action_delete.png"/>
         </display:column>

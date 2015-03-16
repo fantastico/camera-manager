@@ -20,7 +20,6 @@ public class Camera implements java.io.Serializable {
 	private String status;
 	private String ip;
 	private Short maxUsers;
-	private Short currentUsers;
 
 	// Constructors
 
@@ -35,19 +34,18 @@ public class Camera implements java.io.Serializable {
 
 	/** full constructor */
 	public Camera(String apkId, String userKey, String requestKey,
-			String status, String ip, Short maxUsers, Short currentUsers) {
+			String status, String ip, Short maxUsers) {
 		this.apkId = apkId;
 		this.userKey = userKey;
 		this.requestKey = requestKey;
 		this.status = status;
 		this.ip = ip;
 		this.maxUsers = maxUsers;
-		this.currentUsers = currentUsers;
 	}
 
 	// Property accessors
 	@Id
-	@Column(name = "apk_id", unique = true, nullable = false, length = 32)
+	@Column(name = "camera_id", unique = true, nullable = false, length = 32)
 	public String getApkId() {
 		return this.apkId;
 	}
@@ -99,15 +97,6 @@ public class Camera implements java.io.Serializable {
 
 	public void setMaxUsers(Short maxUsers) {
 		this.maxUsers = maxUsers;
-	}
-
-	@Column(name = "current_users")
-	public Short getCurrentUsers() {
-		return this.currentUsers;
-	}
-
-	public void setCurrentUsers(Short currentUsers) {
-		this.currentUsers = currentUsers;
 	}
 
 }

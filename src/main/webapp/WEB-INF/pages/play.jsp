@@ -8,7 +8,7 @@
 	var socket = io.connect("<%=com.cameramanager.Constants.CAMERA_SERVER_IP%>");
 	socket.on('connection', function(data) {
 		socket.emit('connect', {
-			apkId : '${camera.apkId}',
+			cameraeId : '${camera.apkId}',
 			userKey : '${camera.userKey}'
 		});
 	});
