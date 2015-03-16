@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Thu Nov 20 13:44:15 CST 2014
+genBasicCompId=false
+sessionFactoryName=com.cameramanager.model.HibernateSessionFactory
+profile=
+daoSFId=sessionFactory
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=src/main/resources/applicationContext-dao.xml
+useJavaTypes=true
+keyGenerator=
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/camera-manager/src/main/resources/applicationContext-dao.xml
+createConfigFile=true
